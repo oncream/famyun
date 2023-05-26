@@ -1,0 +1,31 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="200px">
+    <div class="logo">FAMYUN</div>
+    <ul nz-menu nzTheme="dark" nzMode="inline">
+      <li nz-menu-item nzMatchRouter>
+        <span nz-icon nzType="file"></span>
+        <span>
+          <a routerLink="/page/movie/list">电影列表</a>
+        </span>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <span nz-icon nzType="edit" nzTheme="outline"></span>
+        <span >
+            <a routerLink="/page/movie/add">电影录入</a>
+        </span>
+      </li>
+      <li nz-menu-item nzMatchRouter>
+        <span nz-icon nzType="edit" nzTheme="outline"></span>
+        <span>
+          <a routerLink="/page/movie/edit">电影编辑</a>
+        </span>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header></nz-header>
+    <nz-content>
+      <router-outlet></router-outlet>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
