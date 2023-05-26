@@ -1,0 +1,9 @@
+server:
+  mode: prod
+  port: 8080
+log:
+  path: log
+  level: info
+database:
+  driver: sqlite3
+  database: famyun
